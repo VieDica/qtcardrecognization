@@ -1,0 +1,94 @@
+/*===QLabel===*/
+/*可以实现＊／
+QLabel#label_6{
+image: url(:/tou.png);
+}
+
+QPushButton#pushButton_9{
+image: url(:/cha.png);
+}
+
+QPushButton#pushButton_9:hover{
+background-image: url(:/cha1.png);
+}
+
+
+
+/*===QGraphicView===*/
+QGraphicView{
+background-color:#03A9F4;
+border-radius:0px;
+border-color:#03A9F4;
+}
+
+/*===QPushButton===*/
+/*可以实现*/
+QPushButton{
+background-color: #03A9F4;
+color: rgb(255, 255, 255);
+padding:0px;
+border-radius:0px;
+border-color:#03A9F4;
+/*border-radius:8px;*/
+}
+
+QPushButton:hover{
+background-color:#0354F4;
+font:20px;
+}
+
+QPushButton:pressed{
+background-color:#B3E5FC;
+font:20px;
+}
+
+QPushButton#pushButton_7:hover{
+background-color:#0354F4;
+font:19px;
+}
+
+QPushButton#pushButton_7:pressed{
+background-color:#B3E5FC;
+font:20px;
+}
+
+QWidget::QPushButton{
+background-color: #03A9F4;
+color: rgb(255, 255, 255);
+padding:0px;
+border-radius:0px;
+border-color:#03A9F4;
+/*border-radius:8px;*/
+}
+
+QWidget::QPushButton:hover{
+background-color:#0354F4;
+font:20px;
+}
+
+QWidget::QPushButton:pressed{
+background-color:#B3E5FC;
+font:20px;
+}
+
+/*===QHeaderView===*/
+QHeaderView::section {
+    background-color:#03A9F4;
+    color: white;
+    padding-left: 4px;
+    border: 1px solid #B3E5FC;
+}
+
+QHeaderView::section:checked
+{
+    background-color: red;
+}
+
+/* style the sort indicator */
+QHeaderView::down-arrow {
+    image: url(down_arrow.png);
+}
+
+QHeaderView::up-arrow {
+    image: url(up_arrow.png);
+}
