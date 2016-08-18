@@ -1,0 +1,17 @@
+/*===QWidget===*/
+QWidget{
+background-color:white;
+}
+
+/*===QPushButton===*/
+QPushButton:hover{
+background-color:#0354F4;
+font:20px;
+padding:-12px 0px;
+}
+
+QPushButton:pressed{
+background-color:#03E8F4;
+font:20px;
+padding:-12px 0px;
+}

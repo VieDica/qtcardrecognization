@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Client</class>
+ <widget class="QMainWindow" name="Client">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(252, 252, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="Pics_List">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>230</y>
+      <width>696</width>
+      <height>412</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgba(255, 255, 255, 0);
+border-color: rgb(0, 0, 0);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Open_Button">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>660</y>
+      <width>76</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #03A9F4;
+color: rgb(255, 255, 255);
+padding:0px;
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>打开</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Reversepick_Button">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>660</y>
+      <width>76</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:0px;
+border-radius:8px;
+background-color: #03A9F4;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>反选</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Upload_Button">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>660</y>
+      <width>76</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:0px;
+border-radius:8px;
+background-color: #03A9F4;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>上传</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>154</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(3, 169, 244);
+border-color: rgba(255, 255, 255, 0);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Allpick_Button">
+    <property name="geometry">
+     <rect>
+      <x>306</x>
+      <y>660</y>
+      <width>76</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #03A9F4;
+padding:0px;
+border-radius:8px;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>全选</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Clear_Button">
+    <property name="geometry">
+     <rect>
+      <x>518</x>
+      <y>660</y>
+      <width>76</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:0px;
+border-radius:8px;
+background-color: #03A9F4;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>清空</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>185</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(99, 99, 99);</string>
+    </property>
+    <property name="text">
+     <string>文件列表</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>请先登录</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>欢迎您，XXX</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>现代化智能交通监控系统</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>120</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>客户端</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_2">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(149, 149, 149, 99);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_Add"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionFdsa"/>
+    <addaction name="separator"/>
+    <addaction name="actionFds"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action1"/>
+    <addaction name="action2"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Add">
+   <property name="text">
+    <string>添加新文件(&amp;O)</string>
+   </property>
+  </action>
+  <action name="action_jj">
+   <property name="text">
+    <string>                                           jj</string>
+   </property>
+   <property name="iconText">
+    <string>注销(&amp;L)</string>
+   </property>
+  </action>
+  <action name="actionFdsa">
+   <property name="text">
+    <string>注销(L)</string>
+   </property>
+  </action>
+  <action name="actionFds">
+   <property name="text">
+    <string>退出(E)</string>
+   </property>
+  </action>
+  <action name="action1">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action2">
+   <property name="text">
+    <string>说明</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
